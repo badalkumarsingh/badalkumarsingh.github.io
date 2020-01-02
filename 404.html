@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Instagrammar Things</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <style>
+         body::-webkit-scrollbar {
+         display: none;
+         }
+         body{
+         -ms-overflow-style: none;
+         font: 400 15px Lato, sans-serif;
+         line-height: 1.8;
+         color: #818181;
+         }
+         .thumbnail {
+         padding: 0 0 15px 0;
+         border: none;
+         border-radius: 0;
+         }
+         .thumbnail img {
+         width: 100%;
+         height: 100%;
+         margin-bottom: 10px;
+         }
+         .effect1{
+         -webkit-box-shadow: 0 10px 6px -6px #777;
+         -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+         }
+      </style>
+      <script src="instagram.js"></script>
+      <script></script>
+      <style>
+         .jumbotron {
+         background-color: #332d2b; /* grey */
+         color: #ffffff;
+         padding: 45px 25px;
+         font-family: Montserrat, sans-serif;
+         }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">Badal Kumar</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#about">ABOUT</a></li>
+                  <li><a href="#services">SERVICES</a></li>
+                  <li><a href="#portfolio">PORTFOLIO</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="jumbotron  text-center">
+         <h1>Download Media</h1>
+         <p>From Instagram</p>
+         <form class="form-inline" method="POST">
+            <div class="input-group">
+               <div class="input-group-addon">@</div>
+               <input type="text" id="users" value="evergreen_hits_" name="users" class="form-control" size="50" placeholder="Enter Username">
+               <div class="input-group-btn">
+                  <button type="button" id="btn" name="btn" class="btn btn-primary">Search</button>
+               </div>
+            </div>
+         </form>
+         <p id="wait" style="display:none">Loading...</p>
+      </div>
+      <div class="container">
+         <div class="row mypost" id="mypost"></div>
+      </div>
+   </body>
+</html>
