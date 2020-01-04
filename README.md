@@ -1,13 +1,18 @@
 # badalkumarsingh.github.io
 Download Instagram Videos and Images Without Using API
 
-Demo https://badalkumarsingh.github.io/
+Demo:-
++----------------------------+
+From Username:
+https://badalkumarsingh.github.io/
+You can Download upto 12 recent Media (ONLY VIDEOS OR PICS).
 
-ONLY FOR PUBLIC INSTAGRAM ACCOUNT
+From Media Link:
+https://badalkumarsingh.github.io/instaurl.html
+You can Download Everything (VIDEOS/PICS/IGTV)
++----------------------------+
 
-You can Download upto 12 recent Media(Videos)
-To download images just right click and save in your system.
-
-Donate For My research https://rzp.io/i/DjqjCtM
+Upcoming Features:-
+Download Stories/Highlights
 
 !! THANK YOU !!
