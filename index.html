@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
    <head>
@@ -7,6 +8,8 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="dist/css/style.css"/>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <style>
@@ -17,7 +20,10 @@
       -ms-overflow-style: none;
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
-      color: #818181;
+      background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f12711, #f5af19); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   }
   .thumbnail {
   padding: 0 0 15px 0;
@@ -35,7 +41,7 @@
             box-shadow: 0 10px 6px -6px #777;
 }
 .jumbotron {
-  background-color: #332d2b; /* grey */
+  background-color: transparent; /*#332d2b;*/ /* grey */
   color: #ffffff;
   padding: 45px 25px;
   font-family: Montserrat, sans-serif;
@@ -131,6 +137,18 @@
 .profile-edit-btn {
     font-weight: 600;
 }
+/*
+SOME SETTING
+*/
+ul{
+padding-inline-start: 0px;
+}
+.container{
+  background: #a8ff78; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a8ff78, #78ffd6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a8ff78, #78ffd6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*END*/
 /*media query*/
 /* Media Query */
 @media screen and (max-width: 40rem) {
@@ -203,29 +221,9 @@
 </style>
 <script src="instagram.js"></script>
    </head>
-   <body><!--
-      <nav class="navbar navbar-default navbar-fixed-top">
-         <div class="container">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="#">Badal Kumar</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#about">ABOUT</a></li>
-                  <li><a href="#services">SERVICES</a></li>
-                  <li><a href="#portfolio">PORTFOLIO</a></li>
-                  <li><a href="#contact">CONTACT</a></li>
-               </ul>
-            </div>
-         </div>
-      </nav>-->
+   <body>
       <div class="jumbotron  text-center">
-         <h1>Download Media</h1>
+         <h1>Fetch Media</h1>
          <p>From Instagram</p>
          <form class="form-inline" method="POST">
             <div class="input-group">
@@ -236,11 +234,43 @@
                </div>
             </div>
          </form>
-         <small>A Small Gift By <a href="instaurl.html">Badal Kumar</a></small>
          <p id="wait" style="display:none">Loading...</p>
       </div>
       <div class="container">
          <div class="mypost" id="mypost"></div>
       </div>
+
+<div class="kc_fab_wrapper" >
+
+        </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="dist/js/style.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var links = [
+                    {
+                        "bgcolor":"red",
+                        "icon":"<i class='fa fa-plus'></i>"
+                    },
+                    {
+                        "url":"https://wa.me/917982019845",
+                        "bgcolor":"white",
+			"title":"Whatsapp",
+                        "color":"green",
+                        "icon":"<i class='fa fa-whatsapp'></i>",
+                        "target":"_blank"
+                    },
+                    {
+                        "url":"https://instagram.com/badalkumar_",
+                        "bgcolor":"white",
+			"title":"Instagram",
+                        "color":"#ff7600",
+                        "icon":"<i class='fa fa-instagram'></i>",
+			"target":"_blank"
+                    }
+                ]
+                $('.kc_fab_wrapper').kc_fab(links);
+            })
+        </script>
    </body>
 </html>
