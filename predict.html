@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Predictor</title>
+<style>
+.sn h1{
+font-size: 80px;
+color: white;
+background-image:url('static/clip.jpg') ;
+-webkit-background-clip:text;
+-webkit-text-fill-color: transparent;
+animation: anim 5s linear infinite;
+-webkit-backface-visibility: hidden;
+}
+
+@keyframes anim{
+    0%{background-position:0%;}
+    20%{background-position: 40%;}
+    50%{background-position: 100%;}
+    80%{background: position 160%;}
+    100%{background-position: 200%;}
+    }
+
+a{transition: font 0.3s ease 0s;}
+a:hover{font-size: 30px;}
+.on:hover{
+    animation: abc 0.2s linear 0s 1 both;
+}
+
+div button:hover{ font-weight: bold;}
+
+.ttt {
+  visibility: hidden;
+  background-color: rgb(182, 211, 255);
+  color: black;
+  font-family: cursive;
+  text-align: center;
+  border-radius: 30px;  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  right: 0%;
+  font-size: 20px;
+  width: 25%;
+}
+
+.tt:hover .ttt {
+  visibility: visible;
+}
+
+button{
+  background-color:rgb(0, 140, 255);border-radius: 8px;padding: 0%;margin: 0%;font-size: 25px ; color: white;margin: 0 0;text-align: center;text-decoration: none;border: none;
+}
+</style>
+</head>
+<body  style="text-align: center;margin: 0 0;background-image: url('static/df.jfif'); background-size: 100% 100%;background-repeat: no-repeat;background-attachment: fixed;">
+
+  <div style="text-align: left; top: 0;z-index: 1; background-color: rgb(182, 211, 255); position: fixed;width: 100%;"> 
+          
+
+    <a class="tt"  target="_blank" style="text-decoration: none;"> <button>&nbsp; About &nbsp;</button>
+      <div class="ttt" style="left: 0%; padding: 10px ;">
+      <b>Summer Project (Semester 4) <br> Field - AI and ML <br> Topic - Spam message classifier using NLP in python </b> <br>
+      </div>
+    </a>
+
+        <a class="tt" target="_blank" style="text-decoration: none; left:10;"> <button> &nbsp;Contact Us &nbsp; </button>
+           
+            <div class="ttt" style="left: 12.7%;">
+              <img src="{{url_for('static', filename='dp.jpg')}}" alt="" style="width: 60%; height: 62%; ; padding: 10px;border-radius: 20px;"> <br>
+              <b> Keshav Gupta </b> <br> ( Student at Jagannath International Management School, Vasant kunj ) <br>  <br>
+                              
+            </div>
+        </a>
+  <span style="float: right;">
+  <a href="https://github.com/Keshavv-Guptaa" target="_blank" style="text-decoration: none;"><img src="{{url_for('static', filename='github.png')}}" alt="" style="border-radius: 100%; width: 23px;"></a>
+  <a href="https://www.linkedin.com/in/keshav~gupta" target="_blank" style="text-decoration: none;"><img src="{{url_for('static', filename='li.png')}}" alt="" style="border-radius: 100%; width: 23px;"> </a>
+  </span>
+</div>
+
+
+          <br><br><br><br><br><br><br><br>
+        
+        <div>
+        <div class="sn">
+        <h1 style="text-align: center;margin: 0 0;">
+            {% if op==0 %}
+            <p>Authentic Message :)</p>
+            {% else %}
+            <p>SPAM <b>!!!</b></p>
+            {% endif %}
+        </h1>
+        </div>
+        </div>
+</body>
+</html>
