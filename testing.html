@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            margin-top: 20px;
+        }
+        
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 80%;
+            background: #f1f1f1;
+        }
+        
+        form.example button {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+        }
+        
+        form.example button:hover {
+            background: #0b7dda;
+        }
+        
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .links {
+            margin: 30px;
+        }
+        
+        ul {
+            white-space: nowrap;
+        }
+        
+        li {
+            display: inline;
+        }
+        
+        ul li figure img:hover {
+            background: #555;
+        }
+        
+        .list-inline-item:not(:last-child) {
+            margin-right: 3rem;
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .links {
+                overflow: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mail</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron mt-25" style="background:transparent !important">
+        <div class="container text-center">
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:600px">
+                <h1>Yandex</h1><input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="links">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <figure class="figure">
+                                <img src="https://yastatic.net/s3/home/logos/services/1/images.svg" class="figure-img img-fluid rounded" alt="PMail">
+                                <figcaption class="figure-caption">Images</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <figure class="figure">
+                                <img src="https://yastatic.net/s3/home/logos/services/1/video.svg" class="figure-img img-fluid rounded" alt="PMail">
+                                <figcaption class="figure-caption">Video</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <figure class="figure">
+                                <img src="https://yastatic.net/morda-logo/i/services/1/mail.svg" class="figure-img img-fluid rounded" alt="PMail">
+                                <figcaption class="figure-caption">Mail</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <figure class="figure">
+                                <img src="https://yastatic.net/s3/home/logos/services/1/maps.svg" class="figure-img img-fluid rounded" alt="PMail">
+                                <figcaption class="figure-caption">Maps</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
