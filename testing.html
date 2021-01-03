@@ -66,11 +66,6 @@
             display: inline;
         }
         
-        ul li figure img:hover {
-            background-color: rgb(114, 113, 113);
-            /* color: rgb(214, 28, 28); */
-        }
-        
         .list-inline-item:not(:last-child) {
             margin-right: 3rem;
         }
@@ -85,7 +80,7 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">New Project</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -149,9 +144,10 @@
     $(document).ready(function() {
 
         $('.figure').hover(function() {
+            $(this).children('.figure-img').css('background-color', '#727171');
             $(this).children('.figure-caption').css('color', 'red');
-            // alert("h");
         }, function() {
+            $(this).children('.figure-img').css('background-color', 'transparent');
             $(this).children('.figure-caption').css('color', '#6c757d');
         });
 
