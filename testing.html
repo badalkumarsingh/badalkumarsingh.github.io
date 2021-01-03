@@ -67,7 +67,8 @@
         }
         
         ul li figure img:hover {
-            background: #555;
+            background-color: rgb(114, 113, 113);
+            /* color: rgb(214, 28, 28); */
         }
         
         .list-inline-item:not(:last-child) {
@@ -144,5 +145,17 @@
         </div>
     </div>
 </body>
+<script>
+    $(document).ready(function() {
+
+        $('.figure').hover(function() {
+            $(this).children('.figure-caption').css('color', 'red');
+            // alert("h");
+        }, function() {
+            $(this).children('.figure-caption').css('color', '#6c757d');
+        });
+
+    });
+</script>
 
 </html>
